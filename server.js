@@ -7,7 +7,7 @@ const app = express();
 app.use(cors()); // Enable CORS
 app.use(bodyParser.json());
 
-app.get('/bfhl', (req, res) => {
+app.get('*', (req, res) => {
     res.status(200).json({
         "operation_code": 1
     });
